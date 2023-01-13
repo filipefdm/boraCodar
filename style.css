@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9cdf7;
+}
+
+button,
+h1,
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sofa {
+  position: relative;
+}
+
+.sofa button {
+  background: transparent;
+  position: absolute;
+  top: 0rem;
+  right: 2.6rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+.sofa img + img {
+  width: 449px;
+  height: 253px;
+}
+
+.infos p {
+  font-size: 10px;
+  color: #271a45;
+
+  margin-bottom: 12px;
+}
+
+.infos h1 {
+  font-family: "Crimson Pro", sans-serif;
+  color: #271a45;
+  margin-bottom: 12px;
+}
+
+#price {
+  font-size: 16px;
+  color: #271a45;
+  margin-bottom: 20px;
+}
+
+.infos button {
+  background-color: #d9cdf7;
+  padding: 8px 16px;
+
+  border: 0.5px solid #271a45;
+  border-radius: 999px;
+
+  text-transform: uppercase;
+  color: #271a45;
+
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.infos button:hover {
+  background: #0d0816;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

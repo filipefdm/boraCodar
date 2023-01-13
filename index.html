@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>#boraCodar - Desafio 02</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sofa">
+        <img
+          width="449"
+          height="253"
+          id="myImage"
+          src="./assets/sofa.png"
+          alt="Sofa image"
+        />
+        <img
+          class="myImage hide"
+          src="./assets/rotating-sofa.gif"
+          alt="Sofa image"
+        />
+        <div class="icons-wrapper">
+          <button class="rotating" onclick="changeImage()">
+            <img src="./assets/vector.png" alt="Rotating sofa" />
+          </button>
+          <button class="close hide">
+            <img src="./assets/close-button.svg" alt="Close button" />
+          </button>
+        </div>
+      </div>
+      <div class="text">
+        <div class="infos">
+          <p>CÓDIGO: 42404</p>
+          <h1>Sofá Margot II - Rosé</h1>
+          <p id="price">R$ 4.000</p>
+          <button>Adicionar à cesta</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
